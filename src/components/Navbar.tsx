@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Award } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,8 +34,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="text-lg md:text-xl font-bold text-ocean-800 dark:text-white">
-              Playa<span className="text-teal-600">Invest</span>
+            <a href="/" className="flex items-center space-x-2">
+              <div className="relative flex items-center justify-center h-10 w-10 rounded-full bg-gradient-to-br from-teal-600 to-ocean-500 shadow-md">
+                <Award className="h-6 w-6 text-white" strokeWidth={2.5} />
+                <div className="absolute inset-0 rounded-full border border-white/20 shadow-inner"></div>
+              </div>
+              <div className="flex flex-col items-start">
+                <span className="text-xl font-bold text-ocean-800 dark:text-white">
+                  Playa<span className="text-teal-600">Invest</span>
+                </span>
+                <span className="text-[10px] uppercase tracking-wider text-ocean-700/80 font-medium -mt-1">Est. 1974</span>
+              </div>
             </a>
           </div>
 
