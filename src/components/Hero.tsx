@@ -18,8 +18,8 @@ const Hero = () => {
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background image with overlay */}
       <div className={`absolute inset-0 bg-image transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`} 
-           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb")'}}> 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1559599746-8823b38544c6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb")' }}>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
       </div>
       
       {/* Content */}
