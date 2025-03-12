@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { ArrowDown, ChevronRight, Award } from 'lucide-react';
+import { ArrowDown, ChevronRight, Gem } from 'lucide-react';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -18,8 +18,8 @@ const Hero = () => {
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background image with overlay */}
       <div className={`absolute inset-0 bg-image transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`} 
-           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=photo-1500375592092-40eb2168fd21")' }}>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50"></div>
+           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1559599746-8823b38544c6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb")' }}>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
       </div>
       
       {/* Content */}
@@ -27,8 +27,8 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <div className={`mb-8 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="inline-flex items-center justify-center">
-              <div className="relative flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-teal-600 to-ocean-500 shadow-md">
-                <Award className="h-9 w-9 text-white" strokeWidth={2.5} />
+              <div className="relative flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-teal-600 to-ocean-500 shadow-lg">
+                <Gem className="h-9 w-9 text-white" strokeWidth={2} />
                 <div className="absolute inset-0 rounded-full border border-white/20 shadow-inner"></div>
               </div>
             </div>

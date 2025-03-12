@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { Menu, X, Award } from 'lucide-react';
+import { Menu, X, Gem } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,14 +36,14 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2">
               <div className="relative flex items-center justify-center h-10 w-10 rounded-full bg-gradient-to-br from-teal-600 to-ocean-500 shadow-md">
-                <Award className="h-6 w-6 text-white" strokeWidth={2.5} />
+                <Gem className="h-6 w-6 text-white" strokeWidth={2} />
                 <div className="absolute inset-0 rounded-full border border-white/20 shadow-inner"></div>
               </div>
               <div className="flex flex-col items-start">
-                <span className="text-xl font-bold text-ocean-800 dark:text-white">
-                  Playa<span className="text-teal-600">Invest</span>
+                <span className="text-xl font-bold text-white dark:text-white">
+                  Playa<span className="text-teal-400">Invest</span>
                 </span>
-                <span className="text-[10px] uppercase tracking-wider text-ocean-700/80 font-medium -mt-1">Est. 1974</span>
+                <span className="text-[10px] uppercase tracking-wider text-white/90 font-medium -mt-1">Est. 1974</span>
               </div>
             </a>
           </div>
@@ -72,9 +72,9 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-ocean-700" />
+              <X className="h-6 w-6 text-white" />
             ) : (
-              <Menu className="h-6 w-6 text-ocean-700" />
+              <Menu className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
@@ -105,7 +105,7 @@ const Navbar = () => {
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
   <a 
     href={href} 
-    className="text-ocean-800 font-medium relative hover:text-ocean-600 transition-colors after:absolute after:left-0 after:right-0 after:bottom-0 after:h-0.5 after:bg-ocean-500 after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-300"
+    className="text-white font-medium relative hover:text-teal-300 transition-colors after:absolute after:left-0 after:right-0 after:bottom-0 after:h-0.5 after:bg-teal-400 after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-300"
   >
     {children}
   </a>
