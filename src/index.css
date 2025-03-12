@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,35 +13,35 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 195 100% 45%;
-    --primary-foreground: 195 100% 98%;
+    --primary: 173 80% 36%;
+    --primary-foreground: 173 80% 98%;
 
-    --secondary: 42 100% 55%;
-    --secondary-foreground: 42 80% 8%;
+    --secondary: 187 85% 43%;
+    --secondary-foreground: 187 80% 98%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 180 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 173 80% 36%;
-    --accent-foreground: 173 80% 98%;
+    --accent: 195 95% 41%;
+    --accent-foreground: 195 95% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 195 100% 45%;
+    --border: 187 30% 91%;
+    --input: 187 30% 91%;
+    --ring: 173 80% 36%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 187 30% 98%;
+    --sidebar-foreground: 187 30% 26.1%;
+    --sidebar-primary: 187 30% 10%;
+    --sidebar-primary-foreground: 187 30% 98%;
+    --sidebar-accent: 187 30% 95.9%;
+    --sidebar-accent-foreground: 187 30% 10%;
+    --sidebar-border: 187 30% 91%;
+    --sidebar-ring: 173 80% 36%;
   }
 }
 
@@ -63,11 +62,11 @@
 }
 
 .glass {
-  @apply bg-white/70 backdrop-blur-md;
+  @apply bg-white/70 backdrop-blur-md border border-teal-50/20 shadow-xl;
 }
 
 .glass-dark {
-  @apply bg-black/40 backdrop-blur-md;
+  @apply bg-black/40 backdrop-blur-md border border-white/10;
 }
 
 .bg-image {
